@@ -23,7 +23,7 @@ Loading Chinese County-Level Administrative Division Polygon Data
 }
 \examples{
 library(sf)
-province = load_cn_county()
-province
+county = load_cn_county()
+county
 
 }
