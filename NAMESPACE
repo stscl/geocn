@@ -2,4 +2,5 @@
 
 export(load_cn_city)
 export(load_cn_county)
+export(load_cn_landcoast)
 export(load_cn_province)
