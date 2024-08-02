@@ -2,3 +2,14 @@ url: https://spatlyu.github.io/geocn/
 template:
   bootstrap: 5
 
+home:
+  title: >
+    geocn | Loads Spatial Data Sets of China
+
+authors:
+  Wenbo Lv:
+    href: https://spatlyu.github.io/
+
+logo:
+    width: 80
+    height: 80
