@@ -57,3 +57,18 @@ load_cn_border = \(){
     sf::read_sf(layer = 'border')
   return(cn_border)
 }
+
+#' Loading Coastline of China
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' cn_coastline = load_cn_coastline()
+#' cn_coastline
+#'
+load_cn_coastline = \(){
+  cn_coastline = system.file('extdata/china.gdb',package = 'geocn') |>
+    sf::read_sf(layer = 'coastline')
+  return(cn_coastline)
+}

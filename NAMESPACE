@@ -2,6 +2,7 @@
 
 export(load_cn_border)
 export(load_cn_city)
+export(load_cn_coastline)
 export(load_cn_county)
 export(load_cn_landborder)
 export(load_cn_landcoast)
