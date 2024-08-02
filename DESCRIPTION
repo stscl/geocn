@@ -6,7 +6,7 @@ Authors@R:
            "lyu.geosocial@gmail.com", 
            role = c("aut", "cre"),
            comment = c(ORCID = "0009-0002-6003-3800"))
-Description: Providing the loading of various commonly used spatial data related 
+Description: Providing various commonly used spatial data related 
              to Chinese regions in the R programming environment.
 License: GPL-3
 Encoding: UTF-8
