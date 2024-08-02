@@ -76,3 +76,17 @@ load_world_lake = \(){
     sf::read_sf(layer = 'lake')
   return(st_rename_geometry(world_lake,'geometry'))
 }
+
+#' Loading Global Oceans
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' load_world_ocean()
+#'
+load_world_ocean = \(){
+  world_ocean = system.file('extdata/world.gdb',package = 'geocn') |>
+    sf::read_sf(layer = 'ocean')
+  return(st_rename_geometry(world_ocean,'geometry'))
+}
