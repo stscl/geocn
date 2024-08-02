@@ -2,9 +2,12 @@ Package: geocn
 Title: Loads Spatial Data Sets of China
 Version: 0.0.0.9000
 Authors@R: 
-    person("Wenbo", "Lv", , "lyu.geosocial@gmail.com", role = c("aut", "cre"),
+    person("Wenbo", "Lv", , 
+           "lyu.geosocial@gmail.com", 
+           role = c("aut", "cre"),
            comment = c(ORCID = "0009-0002-6003-3800"))
-Description: What the package does (one paragraph).
+Description: Providing the loading of various commonly used spatial data related 
+             to Chinese regions in the R programming environment.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
