@@ -1,5 +1,5 @@
 Package: geocn
-Title: Spatial Data Sets of China
+Title: Loads Spatial Data Sets of China
 Version: 0.0.0.9000
 Authors@R: 
     person("Wenbo", "Lv", , "lyu.geosocial@gmail.com", role = c("aut", "cre"),
