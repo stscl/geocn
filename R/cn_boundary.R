@@ -27,3 +27,18 @@ load_cn_landborder = \(){
     sf::read_sf(layer = 'landborder')
   return(cn_landborder)
 }
+
+#' Loading the ten-dash line of the South China Sea
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' cn_tenline = load_cn_tenline()
+#' cn_tenline
+#'
+load_cn_tenline = \(){
+  cn_tenline = system.file('extdata/china.gdb',package = 'geocn') |>
+    sf::read_sf(layer = 'tenline')
+  return(cn_tenline)
+}
