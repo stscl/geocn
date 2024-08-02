@@ -2,7 +2,7 @@
 % Please edit documentation in R/cn_boundary.R
 \name{load_cn_tenline}
 \alias{load_cn_tenline}
-\title{Loading the ten-dash line of the South China Sea}
+\title{Loading the 10-dash line of the South China Sea}
 \usage{
 load_cn_tenline()
 }
@@ -10,7 +10,7 @@ load_cn_tenline()
 An sf object
 }
 \description{
-Loading the ten-dash line of the South China Sea
+Loading the 10-dash line of the South China Sea
 }
 \examples{
 cn_tenline = load_cn_tenline()

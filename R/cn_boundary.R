@@ -28,7 +28,7 @@ load_cn_landborder = \(){
   return(cn_landborder)
 }
 
-#' Loading the ten-dash line of the South China Sea
+#' Loading the 10-dash line of the South China Sea
 #'
 #' @return An sf object
 #' @export
@@ -41,4 +41,19 @@ load_cn_tenline = \(){
   cn_tenline = system.file('extdata/china.gdb',package = 'geocn') |>
     sf::read_sf(layer = 'tenline')
   return(cn_tenline)
+}
+
+#' Loading China's Land Border Line and the 10-dash line of the South China Sea
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' cn_border = load_cn_border()
+#' cn_border
+#'
+load_cn_border = \(){
+  cn_border = system.file('extdata/china.gdb',package = 'geocn') |>
+    sf::read_sf(layer = 'border')
+  return(cn_border)
 }
