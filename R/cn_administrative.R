@@ -25,7 +25,7 @@ load_cn_province = \(simplify = TRUE,
       rmapshaper::ms_simplify(keep = keep,keep_shapes = keep_shape,...) |>
       sf::st_cast('MULTIPOLYGON')
   }
-  return(cn_province)
+  return(st_rename_geometry(cn_province,'geometry'))
 }
 
 #' Loading Chinese City-Level Administrative Division Polygon Data
@@ -55,7 +55,7 @@ load_cn_city = \(simplify = TRUE,
       rmapshaper::ms_simplify(keep = keep,keep_shapes = keep_shape,...) |>
       sf::st_cast('MULTIPOLYGON')
   }
-  return(cn_city)
+  return(st_rename_geometry(cn_city,'geometry'))
 }
 
 #' Loading Chinese County-Level Administrative Division Polygon Data
@@ -85,5 +85,5 @@ load_cn_county = \(simplify = TRUE,
       rmapshaper::ms_simplify(keep = keep,keep_shapes = keep_shape,...) |>
       sf::st_cast('MULTIPOLYGON')
   }
-  return(cn_county)
+  return(st_rename_geometry(cn_county,'geometry'))
 }
