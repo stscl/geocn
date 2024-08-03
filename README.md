@@ -15,6 +15,8 @@ related to Chinese regions in the R programming environment.
 
 ## Installation
 
+### Install from source
+
 You can install the development version of *geocn* from
 [*github*](https://github.com/SpatLyu/geocn):
 
@@ -23,6 +25,18 @@ You can install the development version of *geocn* from
 devtools::install_github("SpatLyu/geocn",
                          build_vignettes = T,
                          dep = T)
+```
+
+### Install the binary version
+
+You can also install the binary version of **geocn** from
+[r-universe](https://spatlyu.r-universe.dev/geocn):
+
+``` r
+install.packages("geocn", 
+                 repos = c("https://spatlyu.r-universe.dev",
+                           "https://cran.rstudio.com/"),
+                 dep = TRUE)
 ```
 
 ## Example
