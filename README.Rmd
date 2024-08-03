@@ -107,12 +107,13 @@ fig1 +
 ggdraw() +
   draw_plot(china.main) +
   draw_plot(china.ocean,x = .815, y = .015,
-            width = .13, height = .20)
+            width = .13, height = .20) -> cnmap1
+cnmap1
 ```
 
 ### Drawing a Map of China Using `tmap`
 
-```{r map2,fig.width=7.25,fig.height=6}
+```{r ,fig.show='hide'}
 library(sf)
 library(tmap)
 library(cowplot)
@@ -160,6 +161,9 @@ ggdraw() +
             halign = 0.5,valign = 0.5,
             height = 0.2,
             x = 0.427,
-            y = 0.019)
+            y = 0.019) -> cnmap2
 ```
 
+```{r map2,fig.width=7.25,fig.height=6}
+cnmap2
+```

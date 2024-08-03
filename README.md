@@ -96,7 +96,8 @@ fig1 +
 ggdraw() +
   draw_plot(china.main) +
   draw_plot(china.ocean,x = .815, y = .015,
-            width = .13, height = .20)
+            width = .13, height = .20) -> cnmap1
+cnmap1
 ```
 
 <img src="man/figures/README-map1-1.png" width="100%" />
@@ -151,7 +152,11 @@ ggdraw() +
             halign = 0.5,valign = 0.5,
             height = 0.2,
             x = 0.427,
-            y = 0.019)
+            y = 0.019) -> cnmap2
 ```
 
-<img src="man/figures/README-map2-1.png" width="100%" /><img src="man/figures/README-map2-2.png" width="100%" /><img src="man/figures/README-map2-3.png" width="100%" />
+``` r
+cnmap2
+```
+
+<img src="man/figures/README-map2-1.png" width="100%" />
