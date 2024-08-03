@@ -19,4 +19,9 @@ Imports:
     rmapshaper,
     sf,
     terra
+Suggests: 
+    cowplot,
+    ggplot2,
+    ggspatial,
+    tmap
 URL: https://github.com/SpatLyu/geocn, https://spatlyu.github.io/geocn/

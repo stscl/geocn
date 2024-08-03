@@ -40,3 +40,20 @@ install.packages("geocn",
 ```
 
 ## Example
+
+### Drawing a Map of China Using `ggplot2`and `ggspatial`
+
+``` r
+library(sf)
+library(ggplot2)
+library(ggspatial)
+library(cowplot)
+```
+
+### Drawing a Map of China Using `tmap`
+
+``` r
+library(sf)
+library(tmap)
+library(cowplot)
+```
