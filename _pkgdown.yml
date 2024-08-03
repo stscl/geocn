@@ -31,4 +31,4 @@ reference:
 
 - title: Conversion of Regional Special Coordinate Systems in China
   contents:
-  - load_cn_alberproj
+  - st_transform_cn
