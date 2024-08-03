@@ -1,9 +1,9 @@
 #' projection factor
-#' @noRD
+#' @noRd
 pf_constant = 6378245.0
 
 #' eccentricity
-#' @noRD
+#' @noRd
 ee_constant = 0.00669342162296594323
 
 # source code from https://github.com/versey-sherry/ChinaCoordinate
