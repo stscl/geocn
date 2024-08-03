@@ -49,7 +49,58 @@ library(ggplot2)
 library(ggspatial)
 library(cowplot)
 library(geocn)
+
+albers = load_cn_alberproj()
+province = load_cn_province()
+tenline = load_cn_tenline()
+ocean = load_world_ocean()
+lakes = load_world_lake()
+coastline = load_world_coastline()
+
+ggplot() +
+  geom_sf(data = ocean,fill="#BEE8FF",color="white",size=.1) +
+  geom_sf(data = coastline,color="#252525",size=.5) +
+  geom_sf(data = province,fill="white",size=.1,color="grey") + 
+  geom_sf(data = lakes,fill="#BEE8FF",color="white",size=.1) +
+  geom_sf(data = tenline,size=.2,color="#9d98b7") +
+  ggfx::with_shadow(geom_sf(data = tenline,size=.2,color="#9d98b7") , 
+                    sigma = 3,x_offset = -5,y_offset = -2) -> fig1
+
+fig1 +
+  coord_sf(crs = albers,
+           ylim = c(1500000,6000000),
+           xlim = c(-3100000,2000000),
+           expand = FALSE) +
+  theme_bw() +
+  theme(plot.background = element_rect("grey97", fill = NA),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank()) -> china.main
+
+fig1 + 
+  coord_sf(crs = albers,
+           ylim = c(273000,2800000),
+           xlim = c(-350000,1350000)) +
+  theme_minimal() +
+  theme(
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank(),
+    panel.background = element_rect("#BEE8FF", color = NA),
+    panel.border = element_rect(fill=NA,
+                                linetype = 1,
+                                linewidth = 0.5),
+    plot.margin=unit(c(0,0,0,0),"cm")) -> china.ocean
+
+ggdraw() +
+  draw_plot(china.main) +
+  draw_plot(china.ocean,x = .79, y = .04,
+            width = .14, height = .22) -> cnmap1
+cnmap1
 ```
+
+<img src="man/figures/README-map1-1.png" width="100%" />
 
 ### Drawing a Map of China Using `tmap`
 
