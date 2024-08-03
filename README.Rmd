@@ -54,7 +54,7 @@ install.packages("geocn",
 
 ### Drawing a Map of China Using `ggplot2`and `ggspatial`
 
-```{r map1,fig.width=10,fig.height=8}
+```{r map1,fig.width=9.5,fig.height=7.5}
 library(sf)
 library(ggplot2)
 library(ggspatial)
@@ -106,9 +106,8 @@ fig1 +
 
 ggdraw() +
   draw_plot(china.main) +
-  draw_plot(china.ocean,x = .79, y = .04,
-            width = .14, height = .22) -> cnmap1
-cnmap1
+  draw_plot(china.ocean,x = .815, y = .015,
+            width = .13, height = .20)
 ```
 
 ### Drawing a Map of China Using `tmap`
@@ -161,7 +160,6 @@ ggdraw() +
             halign = 0.5,valign = 0.5,
             height = 0.2,
             x = 0.427,
-            y = 0.019) -> cnmap2
-cnmap2
+            y = 0.019)
 ```
 
