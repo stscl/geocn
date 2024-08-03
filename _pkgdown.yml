@@ -19,7 +19,12 @@ reference:
 - title: Vector Data for China Region
   contents:
   - starts_with("load_cn")
+  - -load_cn_alberproj
 
 - title: Vector Data for World Gloal Region
   contents:
   - starts_with("load_world")
+
+- title: Commonly Used CRS in China Region
+  contents:
+  - load_cn_alberproj
