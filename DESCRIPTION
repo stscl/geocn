@@ -21,6 +21,7 @@ Imports:
     terra
 Suggests: 
     cowplot,
+    ggfx,
     ggplot2,
     ggspatial,
     tmap
