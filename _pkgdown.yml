@@ -13,3 +13,13 @@ authors:
 logo:
     width: 80
     height: 80
+
+reference:
+
+- title: Vector Data for China Region
+  contents:
+  - starts_with("load_cn")
+
+- title: Vector Data for World Gloal Region
+  contents:
+  - starts_with("load_world")
