@@ -28,3 +28,7 @@ reference:
 - title: Commonly Used CRS in China Region
   contents:
   - load_cn_alberproj
+
+- title: Conversion of Regional Special Coordinate Systems in China
+  contents:
+  - load_cn_alberproj
