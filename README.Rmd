@@ -52,12 +52,11 @@ install.packages("geocn",
 
 ## Example
 
-### Drawing a Map of China Using `ggplot2`and `ggspatial`
+### Drawing a Map of China Using `ggplot2`
 
-```{r map1,fig.width=9.5,fig.height=7.5}
+```{r map1,fig.width=9.5,fig.height=7.5,fig.dpi=120}
 library(sf)
 library(ggplot2)
-library(ggspatial)
 library(cowplot)
 library(geocn)
 
@@ -113,7 +112,7 @@ cnmap1
 
 ### Drawing a Map of China Using `tmap`
 
-```{r ,fig.show='hide'}
+```{r ,fig.show='hide',fig.dpi=120}
 library(sf)
 library(tmap)
 library(cowplot)
@@ -164,6 +163,6 @@ ggdraw() +
             y = 0.019) -> cnmap2
 ```
 
-```{r map2,fig.width=7.25,fig.height=6}
+```{r map2,fig.width=7.25,fig.height=6,fig.dpi=120}
 cnmap2
 ```
