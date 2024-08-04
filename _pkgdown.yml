@@ -18,6 +18,9 @@ navbar:
   components:
     articles:
       text: Vignettes
+      menu:
+      - text: Introduction to geocn
+        href: articles/geocn.html
 
 reference:
 
