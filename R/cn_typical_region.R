@@ -21,7 +21,7 @@ load_weihe_basin = \(){
 #' load_loess_plateau()
 #'
 load_loess_plateau = \(){
-  cn_loess_plateau = system.file('extdata/weihe.gdb',package = 'geocn') |>
-    sf::read_sf(layer = 'basin')
+  cn_loess_plateau = system.file('extdata/loess_plateau.geojson',package = 'geocn') |>
+    sf::read_sf()
   return(st_rename_geometry(cn_loess_plateau,'geometry'))
 }
