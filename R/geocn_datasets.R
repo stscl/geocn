@@ -12,7 +12,7 @@
 #'
 list_geocn = \(){
   geocn_datasets = tibble::tibble(
-    function = c(
+    functions = c(
       "load_cn_province",
       "load_cn_city",
       "load_cn_county",
@@ -29,7 +29,7 @@ list_geocn = \(){
       "load_world_river",
       "load_loess_plateau",
       "load_weihe_basin"),
-    result = c(
+    results = c(
       "Province-Level Administrative Units in China",
       "City-Level Administrative Units in China",
       "County-Level Administrative Units in China",
