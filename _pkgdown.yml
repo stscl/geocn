@@ -2,18 +2,6 @@ url: https://spatlyu.github.io/geocn/
 template:
   bootstrap: 5
 
-home:
-  title: >
-    geocn | Loads Spatial Data Sets of China
-
-authors:
-  Wenbo Lv:
-    href: https://spatlyu.github.io/
-
-logo:
-    width: 80
-    height: 80
-
 navbar:
   components:
     articles:
@@ -45,3 +33,12 @@ reference:
 - title: Conversion of Regional Special Coordinate Systems in China
   contents:
   - st_transform_cn
+
+home:
+  title: >
+    geocn | Loads Spatial Data Sets of China
+
+authors:
+  Wenbo Lv:
+    href: https://spatlyu.github.io/
+
