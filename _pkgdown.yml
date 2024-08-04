@@ -5,6 +5,9 @@ template:
   light-switch: true
 
 navbar:
+  structure:
+    right:  [search, github]
+    left: [reference, articles]
   components:
     articles:
       text: Vignettes
