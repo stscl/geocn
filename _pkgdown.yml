@@ -25,6 +25,10 @@ reference:
   contents:
   - starts_with("load_world")
 
+- title: Typical Regional Geographic Data in China
+  contents:
+  - load_weihe_basin
+
 - title: Commonly Used CRS in China Region
   contents:
   - load_cn_alberproj
