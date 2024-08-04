@@ -35,7 +35,7 @@ reference:
   - st_transform_cn
 
 home:
-  title: >
+  title: |
     geocn | Loads Spatial Data Sets of China
 
 authors:
