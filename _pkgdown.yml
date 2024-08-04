@@ -15,7 +15,6 @@ navbar:
         href: articles/geocn.html
 
 reference:
-
 - title: Vector Data for China Region
   contents:
   - starts_with("load_cn")
