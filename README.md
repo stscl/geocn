@@ -10,7 +10,7 @@
 
 <!-- badges: end -->
 
-The goal of geocn is to provide various commonly used spatial data
+The goal of **geocn** is to provide various commonly used spatial data
 related to Chinese regions in the R programming environment.
 
 ## Installation
