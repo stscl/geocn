@@ -25,5 +25,8 @@ Suggests:
     ggfx,
     ggplot2,
     ggspatial,
+    knitr,
+    rmarkdown,
     tmap
 URL: https://github.com/SpatLyu/geocn, https://spatlyu.github.io/geocn/
+VignetteBuilder: knitr

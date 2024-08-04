@@ -1,0 +1,18 @@
+---
+title: "Loads Spatial Data Sets Related to China"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{geocn}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "##",
+  warning = FALSE,
+  message = FALSE,
+  fig.path = "man/figures/vignette/"
+)
+```
