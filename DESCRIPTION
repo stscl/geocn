@@ -19,7 +19,8 @@ Imports:
     purrr,
     rmapshaper,
     sf,
-    terra
+    terra,
+    tibble
 Suggests: 
     cowplot,
     ggfx,
