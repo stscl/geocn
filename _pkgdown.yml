@@ -27,6 +27,7 @@ reference:
 
 - title: Typical Regional Geographic Data in China
   contents:
+  - load_loess_plateau
   - load_weihe_basin
 
 - title: Commonly Used CRS in China Region
