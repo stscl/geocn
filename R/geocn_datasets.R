@@ -29,6 +29,7 @@ list_geocn = \(){
       "load_world_river",
       "load_tibetan_plateau",
       "load_loess_plateau",
+      "load_yangtze_basin",
       "load_weihe_basin"),
     results = c(
       "Province-Level Administrative Units in China",
@@ -47,6 +48,7 @@ list_geocn = \(){
       "Global Rivers",
       "Tibetan Plateau Boundary",
       "Loess Plateau Boundary",
+      "Yangtze River Basin Boundary",
       "Weihe River Basin Boundary")
     )
   return(geocn_datasets)
