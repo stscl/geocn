@@ -30,3 +30,18 @@ load_loess_plateau = \(){
     sf::read_sf()
   return(st_rename_geometry(cn_loess_plateau,'geometry'))
 }
+
+#' Loading the Boundary Polygon Data of Tibetan Plateau
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' load_tibetan_plateau()
+#'
+load_tibetan_plateau = \(){
+  cn_tibetan_plateau = system.file('extdata/tibetan_plateau.geojson',
+                                   package = 'geocn') |>
+    sf::read_sf()
+  return(st_rename_geometry(cn_tibetan_plateau,'geometry'))
+}
