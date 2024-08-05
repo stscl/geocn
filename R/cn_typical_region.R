@@ -16,6 +16,23 @@ load_weihe_basin = \(){
   return(cn_weihe_basin)
 }
 
+#' Loading the Boundary Polygon Data of Yangtze River Basin
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' load_yangtze_basin()
+#'
+load_yangtze_basin = \(){
+  suppressWarnings({
+    cn_yangtze_basin = system.file('extdata/YangtzeRiverBasin.geojson',
+                                   package = 'geocn') |>
+      sf::read_sf()
+  })
+  return(cn_yangtze_basin)
+}
+
 #' Loading the Boundary Polygon Data of Loess Plateau
 #'
 #' @return An sf object
