@@ -23,10 +23,30 @@ The **geocn** package covers 19 spatial data sets, including a variety of releva
 ```{r}
 library(sf)
 library(geocn)
+library(ggplot2)
 
 datasets_geocn = list_geocn()
 datasets_geocn
 ```
+
+### Commonly Used CRS for Drawing Maps of China
+
+The `load_cn_alberproj()` function can be used to obtain the CRS information available in the **sf** and **terra** packages. By default, it returns in **sf** format. However, you can specify the return format through the `output` parameter.
+
+```{r map_albers,fig.width=7.25,fig.height=6,fig.dpi=120}
+albers = load_cn_alberproj()
+
+province = load_cn_province()
+ggplot(data = province) +
+  geom_sf(fill = 'grey90', color = 'grey') +
+  theme_bw()
+
+province_albers = st_transform(province,albers)
+ggplot(data = province_albers) +
+  geom_sf(fill = 'grey90', color = 'grey') +
+  theme_bw()
+```
+
 
 ### Region-specific CRS Transformation in China
 
