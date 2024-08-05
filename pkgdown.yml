@@ -3,7 +3,7 @@ pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
   geocn: geocn.html
-last_built: 2024-08-05T09:09Z
+last_built: 2024-08-05T09:19Z
 urls:
   reference: https://spatlyu.github.io/geocn/reference
   article: https://spatlyu.github.io/geocn/articles
