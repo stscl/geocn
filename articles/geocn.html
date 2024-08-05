@@ -69,8 +69,79 @@
 
     
     
-
-  </main>
+<p>The <a href="https://github.com/SpatLyu/geocn" class="external-link"><strong>geocn</strong></a>
+package provides various commonly used spatial data related to Chinese
+regions in the R programming environment. This vignette presents a quick
+intro to <strong>geocn</strong>.</p>
+<div class="section level3">
+<h3 id="available-data-sets">Available data sets<a class="anchor" aria-label="anchor" href="#available-data-sets"></a>
+</h3>
+<p>The <strong>geocn</strong> package covers 19 spatial data sets,
+including a variety of relevant data from both the global and Chinese
+regions. You can view what data sets are available using the
+<code><a href="../reference/list_geocn.html">list_geocn()</a></code> function.</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
+<span><span class="co">## Linking to GEOS 3.10.2, GDAL 3.4.1, PROJ 8.2.1; sf_use_s2() is TRUE</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/SpatLyu/geocn" class="external-link">geocn</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">datasets_geocn</span> <span class="op">=</span> <span class="fu"><a href="../reference/list_geocn.html">list_geocn</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">datasets_geocn</span></span>
+<span><span class="co">## <span style="color: #949494;"># A tibble: 19 × 2</span></span></span>
+<span><span class="co">##    functions               results                                              </span></span>
+<span><span class="co">##    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                                </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 1</span> load_world_country      Global Country Boundaries                            </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 2</span> load_world_continent    Global Continents                                    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 3</span> load_world_coastline    Global Coastlines                                    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 4</span> load_world_ocean        Global Oceans                                        </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 5</span> load_world_lake         Global Lakes                                         </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 6</span> load_world_river        Global Rivers                                        </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 7</span> load_cn_province        Province-Level Administrative Units in China         </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 8</span> load_cn_city            City-Level Administrative Units in China             </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 9</span> load_cn_county          County-Level Administrative Units in China           </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">10</span> load_cn_border          China's Land Border Line and the 10-dash line of the…</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">11</span> load_cn_landborder      China's Land Border                                  </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">12</span> load_cn_coastline       Coastline of China                                   </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">13</span> load_cn_tenline         10-dash line of the South China Sea                  </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">14</span> load_cn_landcoast       China's Land Border and Coastline                    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">15</span> load_tibetan_plateau    Tibetan Plateau Boundary                             </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">16</span> load_loess_plateau      Loess Plateau Boundary                               </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">17</span> load_yangtze_basin      Yangtze River Basin Boundary                         </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">18</span> load_yellow_river_basin Yellow River Basin Boundary                          </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">19</span> load_weihe_basin        Weihe River Basin Boundary</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="region-specific-crs-transformation-in-china">Region-specific CRS Transformation in China<a class="anchor" aria-label="anchor" href="#region-specific-crs-transformation-in-china"></a>
+</h3>
+<p>This section primarily focuses on the conversion between the GCJ02,
+BD09, and WGS84 coordinate systems. The <strong>geocn</strong> provides
+<code><a href="../reference/st_transform_cn.html">st_transform_cn()</a></code> function to achieve the conversion. You
+need to input the longitude and latitude coordinate vectors to be
+transformed as function parameters <code>lon</code> and
+<code>lat</code>, and specify the CRS before transformation and the CRS
+to be transformed. Please note that in the
+<code><a href="../reference/st_transform_cn.html">st_transform_cn()</a></code> function, the <code>from</code> and
+<code>to</code> parameters respectively refer to <code>wgs</code>,
+<code>gcj</code>, <code>bd</code> for <code>WGS84</code>,
+<code>GCJ02</code>, <code>BD09</code> coordinate systems. Default
+Conversion from GCJ02 to WGS84.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">lon</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">126.626510</span>,<span class="fl">126.625261</span>,<span class="fl">126.626378</span>,<span class="fl">126.626541</span>,<span class="fl">126.626721</span>,<span class="fl">126.627732</span>,<span class="fl">126.626510</span><span class="op">)</span></span>
+<span><span class="va">lat</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">45.731596</span>,<span class="fl">45.729834</span>,<span class="fl">45.729435</span>,<span class="fl">45.729676</span>,<span class="fl">45.729604</span>,<span class="fl">45.730915</span>,<span class="fl">45.731596</span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/st_transform_cn.html">st_transform_cn</a></span><span class="op">(</span><span class="va">lon</span>,<span class="va">lat</span><span class="op">)</span></span>
+<span><span class="co">## <span style="color: #949494;"># A tibble: 7 × 2</span></span></span>
+<span><span class="co">##     lon   lat</span></span>
+<span><span class="co">##   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">1</span>  127.  45.7</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">2</span>  127.  45.7</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">3</span>  127.  45.7</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">4</span>  127.  45.7</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">5</span>  127.  45.7</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">6</span>  127.  45.7</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">7</span>  127.  45.7</span></span></code></pre></div>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
