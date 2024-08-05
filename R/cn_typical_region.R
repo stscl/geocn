@@ -44,7 +44,7 @@ load_yangtze_basin = \(){
 load_yellow_river_basin = \(){
   suppressWarnings({
     cn_yellow_river_basin = system.file('extdata/YellowRiverBasin.geojson',
-                                   package = 'geocn') |>
+                                         package = 'geocn') |>
       sf::read_sf()
   })
   return(cn_yellow_river_basin)

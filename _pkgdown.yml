@@ -29,6 +29,7 @@ reference:
   - load_tibetan_plateau
   - load_loess_plateau
   - load_yangtze_basin
+  - load_yellow_river_basin
   - load_weihe_basin
 
 - title: Commonly Used CRS in China Region
