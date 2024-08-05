@@ -13,3 +13,29 @@ knitr::opts_chunk$set(
   comment = "##"
 )
 ```
+
+The [**geocn**](https://github.com/SpatLyu/geocn) package provides various commonly used spatial data related to Chinese regions in the R programming environment. This vignette presents a quick intro to **geocn**.
+
+### Available data sets
+
+The **geocn** package covers 19 spatial data sets, including a variety of relevant data from both the global and Chinese regions. You can view what data sets are available using the `list_geocn()` function.
+
+```{r}
+library(sf)
+library(tidyverse)
+library(geocn)
+
+datasets_geocn = list_geocn()
+datasets_geocn
+```
+
+### Region-specific CRS Transformation in China
+
+This section primarily focuses on the conversion between the GCJ02, BD09, and WGS84 coordinate systems. The **geocn** provides `st_transform_cn()` function to achieve the conversion. You need to input the longitude and latitude coordinate vectors to be transformed as function parameters `lon` and `lat`, and specify the CRS before transformation and the CRS to be transformed. Please note that in the `st_transform_cn()` function, the `from` and `to` parameters respectively refer to `wgs`, `gcj`, `bd` for `WGS84`, `GCJ02`, `BD09` coordinate systems. Default Conversion from GCJ02 to WGS84.
+
+```{r}
+lon = c(126.626510,126.625261,126.626378,126.626541,126.626721,126.627732,126.626510)
+lat = c(45.731596,45.729834,45.729435,45.729676,45.729604,45.730915,45.731596)
+st_transform_cn(lon,lat)
+```
+
