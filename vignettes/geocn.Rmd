@@ -22,7 +22,6 @@ The **geocn** package covers 19 spatial data sets, including a variety of releva
 
 ```{r}
 library(sf)
-library(tidyverse)
 library(geocn)
 
 datasets_geocn = list_geocn()
