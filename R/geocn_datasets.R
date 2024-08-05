@@ -27,6 +27,7 @@ list_geocn = \(){
       "load_world_ocean",
       "load_world_lake",
       "load_world_river",
+      "load_tibetan_plateau",
       "load_loess_plateau",
       "load_weihe_basin"),
     results = c(
@@ -44,6 +45,7 @@ list_geocn = \(){
       "Global Oceans",
       "Global Lakes",
       "Global Rivers",
+      "Tibetan Plateau Boundary",
       "Loess Plateau Boundary",
       "Weihe River Basin Boundary")
     )
