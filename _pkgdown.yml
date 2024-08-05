@@ -26,6 +26,7 @@ reference:
 
 - title: Typical Regional Geographic Data in China
   contents:
+  - load_tibetan_plateau
   - load_loess_plateau
   - load_weihe_basin
 
