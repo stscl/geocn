@@ -1,6 +1,6 @@
 Package: geocn
 Title: Loads Spatial Data Sets of China
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Wenbo", "Lv", , 
            "lyu.geosocial@gmail.com", 
