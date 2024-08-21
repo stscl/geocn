@@ -2,8 +2,8 @@ Package: geocn
 Title: Loads Spatial Data Sets of China
 Version: 0.1.0
 Authors@R: 
-    person("Wenbo", "Lv", , 
-           "lyu.geosocial@gmail.com", 
+    person(given = "Wenbo", family = "Lv",
+           email = "lyu.geosocial@gmail.com", 
            role = c("aut", "cre"),
            comment = c(ORCID = "0009-0002-6003-3800"))
 Description: Providing various commonly used spatial data related 
