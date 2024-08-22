@@ -2,7 +2,7 @@
 % Please edit documentation in R/st_transform_cn.R
 \name{st_transform_cn}
 \alias{st_transform_cn}
-\title{Coordinate Conversion Between GCJ02,BD09 and WGS85}
+\title{Coordinate Conversion Between GCJ02,BD09 and WGS84}
 \usage{
 st_transform_cn(lon, lat, from = "gcj", to = "wgs")
 }
@@ -19,7 +19,7 @@ st_transform_cn(lon, lat, from = "gcj", to = "wgs")
 A coordinate tibble in the target CRS.
 }
 \description{
-Coordinate Conversion Between GCJ02,BD09 and WGS85
+Coordinate Conversion Between GCJ02,BD09 and WGS84
 }
 \details{
 \code{wgs} stands for \code{WGS84} coordinate system, \code{gcj} stands for \code{GCJ02} coordinate system,

@@ -1,4 +1,4 @@
-#' @title Coordinate Conversion Between GCJ02,BD09 and WGS85
+#' @title Coordinate Conversion Between GCJ02,BD09 and WGS84
 #' @details
 #' `wgs` stands for `WGS84` coordinate system, `gcj` stands for `GCJ02` coordinate system,
 #' and `bd` stands for `BD09` coordinate system.
