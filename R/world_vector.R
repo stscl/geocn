@@ -12,7 +12,7 @@
 #' load_world_country()
 #'
 load_world_country = \(center = 'west'){
-  if (center %in% c('west','east')){
+  if (center %in% c('west','east')) {
     world_country = system.file('extdata/world.gdb',package = 'geocn') |>
       sf::read_sf(layer = center)
     return(st_rename_geometry(world_country,'geometry'))
