@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 
 [![CRAN](https://www.r-pkg.org/badges/version/geocn)](https://CRAN.R-project.org/package=geocn)
-[![r-universe](https://spatlyu.r-universe.dev/badges/geocn)](https://spatlyu.r-universe.dev/geocn)
+[![r-universe](https://stscl.r-universe.dev/badges/geocn)](https://stscl.r-universe.dev/geocn)
 
 <!-- badges: end -->
 
@@ -28,20 +28,20 @@ The goal of **geocn** is to provide various commonly used spatial data related t
 
 ## Installation
 
-- Install development binary version from [r-universe](https://ausgis.r-universe.dev/geocn) with:
+- Install development binary version from [r-universe](https://stscl.r-universe.dev/geocn) with:
 
 ``` r
 install.packages("geocn", 
-                 repos = c("https://spatlyu.r-universe.dev",
+                 repos = c("https://stscl.r-universe.dev",
                            "https://cran.rstudio.com/"),
                  dep = TRUE)
 ```
 
-- Install development source version from [GitHub](https://github.com/ausgis/geocn) with:
+- Install development source version from [GitHub](https://github.com/stscl/geocn) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("SpatLyu/geocn",
+devtools::install_github("stscl/geocn",
                          build_vignettes = T,
                          dep = T)
 ```

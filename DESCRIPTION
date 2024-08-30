@@ -12,8 +12,8 @@ License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-URL: https://spatlyu.github.io/geocn/, https://github.com/SpatLyu/geocn
-BugReports: https://github.com/SpatLyu/geocn/issues
+URL: https://stscl.github.io/geocn/, https://github.com/stscl/geocn
+BugReports: https://github.com/stscl/geocn/issues
 Depends: 
     R (>= 4.1.0)
 Imports: 
