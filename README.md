@@ -31,8 +31,8 @@ install.packages("geocn",
 ``` r
 # install.packages("devtools")
 devtools::install_github("stscl/geocn",
-                         build_vignettes = T,
-                         dep = T)
+                         build_vignettes = TRUE,
+                         dep = TRUE)
 ```
 
 ## Example
