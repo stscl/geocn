@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![CRAN](https://www.r-pkg.org/badges/version/geocn)](https://CRAN.R-project.org/package=geocn)
-[![r-universe](https://spatlyu.r-universe.dev/badges/geocn)](https://spatlyu.r-universe.dev/geocn)
+[![r-universe](https://stscl.r-universe.dev/badges/geocn)](https://stscl.r-universe.dev/geocn)
 
 <!-- badges: end -->
 
@@ -16,21 +16,21 @@ related to Chinese regions in the R programming environment.
 ## Installation
 
 - Install development binary version from
-  [r-universe](https://ausgis.r-universe.dev/geocn) with:
+  [r-universe](https://stscl.r-universe.dev/geocn) with:
 
 ``` r
 install.packages("geocn", 
-                 repos = c("https://spatlyu.r-universe.dev",
-                           "https://cran.rstudio.com/"),
+                 repos = c("https://stscl.r-universe.dev",
+                           "https://cloud.r-project.org"),
                  dep = TRUE)
 ```
 
 - Install development source version from
-  [GitHub](https://github.com/ausgis/geocn) with:
+  [GitHub](https://github.com/stscl/geocn) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("SpatLyu/geocn",
+devtools::install_github("stscl/geocn",
                          build_vignettes = T,
                          dep = T)
 ```

@@ -33,7 +33,7 @@ The goal of **geocn** is to provide various commonly used spatial data related t
 ``` r
 install.packages("geocn", 
                  repos = c("https://stscl.r-universe.dev",
-                           "https://cran.rstudio.com/"),
+                           "https://cloud.r-project.org"),
                  dep = TRUE)
 ```
 
