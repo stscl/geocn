@@ -6,7 +6,7 @@ template:
 navbar:
   structure:
     right:  [search, github]
-    left: [reference, articles]
+    left: [reference, articles, news]
   components:
     articles:
       text: Vignettes
