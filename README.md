@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# geocn <img src="man/figures/logo.png" align="right" height="90"/>
+# geocn <a href="https://stscl.github.io/geocn/"><img src="man/figures/logo.png" align="right" height="139" alt="geocn website" /></a>
 
 <!-- badges: start -->
 
