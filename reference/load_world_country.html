@@ -66,31 +66,26 @@ and when <code>center</code> is <code>east,</code> the map center is the Pacific
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">load_world_country</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 249 features and 39 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 249 features and 7 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -180 ymin: -90 xmax: 180 ymax: 83.6341</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  WGS 84</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 249 × 40</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    country1     country2 capital1 capital2 scalerank labelrank sovereignt sov_a3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 阿鲁巴       Aruba    奥拉涅…  Oranjes…         3         5 Netherlan… NL1   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 阿富汗       Afghani… 喀布尔   Kabul            0         3 Afghanist… AFG   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 安哥拉       Angola   罗安达   Luanda           0         3 Angola     AGO   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 安圭拉       Anguilla 瓦利     The Val…         3         6 United Ki… GB1   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 阿尔巴尼亚   Albania  地拉那   Tirana           0         6 Albania    ALB   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 奥兰群岛     Aland I… 玛丽港   Marieha…         3         6 Finland    FI1   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 安道尔共和国 Andorra  安道尔   Andorra…         0         6 Andorra    AND   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 阿拉伯联合…  United … 阿布扎比 Abu Dha…         0         4 United Ar… ARE   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 阿根廷       Argenti… 布宜诺…  BuenosA…         0         2 Argentina  ARG   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 亚美尼亚     Armenia  埃里温   Yerevan          0         6 Armenia    ARM   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 249 × 8</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    country1         country2       capital1 capital2 continent iso_a2 adm0_a3_us</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 阿鲁巴           Aruba          奥拉涅…  Oranjes… North Am… AW     ABW       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 阿富汗           Afghanistan    喀布尔   Kabul    Asia      AF     AFG       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 安哥拉           Angola         罗安达   Luanda   Africa    AO     AGO       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 安圭拉           Anguilla       瓦利     The Val… North Am… AI     AIA       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 阿尔巴尼亚       Albania        地拉那   Tirana   Europe    AL     ALB       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 奥兰群岛         Aland Islands  玛丽港   Marieha… Europe    AX     ALD       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 安道尔共和国     Andorra        安道尔   Andorra… Europe    AD     AND       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 阿拉伯联合酋长国 United Arab E… 阿布扎比 Abu Dha… Asia      AE     ARE       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 阿根廷           Argentina      布宜诺…  BuenosA… South Am… AR     ARG       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 亚美尼亚         Armenia        埃里温   Yerevan  Asia      AM     ARM       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 239 more rows</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 32 more variables: type &lt;chr&gt;, name &lt;chr&gt;, name_long &lt;chr&gt;, abbrev &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   postal &lt;chr&gt;, formal_en &lt;chr&gt;, formal_fr &lt;chr&gt;, note_adm0 &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   note_brk &lt;chr&gt;, name_sort &lt;chr&gt;, name_alt &lt;chr&gt;, mapcolor7 &lt;dbl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   mapcolor8 &lt;dbl&gt;, mapcolor9 &lt;dbl&gt;, mapcolor13 &lt;dbl&gt;, pop_est &lt;dbl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   gdp_md_est &lt;dbl&gt;, pop_year &lt;dbl&gt;, lastcensus &lt;dbl&gt;, gdp_year &lt;dbl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   economy &lt;chr&gt;, income_grp &lt;chr&gt;, iso_a2 &lt;chr&gt;, iso_n3 &lt;chr&gt;, un_a3 &lt;chr&gt;, …</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;</span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
