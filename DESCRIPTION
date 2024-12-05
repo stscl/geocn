@@ -30,5 +30,4 @@ Suggests:
     knitr,
     rmarkdown,
     tmap
-LazyData: true
 VignetteBuilder: knitr
