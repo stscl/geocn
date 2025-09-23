@@ -11,7 +11,7 @@ Description: Providing various commonly used spatial data related
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 URL: https://stscl.github.io/geocn/, https://github.com/stscl/geocn
 BugReports: https://github.com/stscl/geocn/issues
 Depends: 
