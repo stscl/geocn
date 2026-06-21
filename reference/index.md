@@ -48,6 +48,8 @@
   : Loading the Boundary Polygon Data of Yellow River Basin
 - [`load_weihe_basin()`](https://stscl.github.io/geocn/reference/load_weihe_basin.md)
   : Loading the Boundary Polygon Data of Weihe River Basin
+- [`load_tarim_basin()`](https://stscl.github.io/geocn/reference/load_tarim_basin.md)
+  : Loading the Boundary Polygon Data of Tarim River Basin
 
 ## Commonly Used CRS in China Region
 
