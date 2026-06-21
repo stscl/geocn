@@ -9,6 +9,7 @@ related to Chinese regions in the R programming environment.
   [R-universe](https://stscl.r-universe.dev/geocn) with:
 
 ``` r
+
 install.packages("geocn", 
                  repos = c("https://stscl.r-universe.dev",
                            "https://cloud.r-project.org"),
@@ -19,6 +20,7 @@ install.packages("geocn",
   [GitHub](https://github.com/stscl/geocn) with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("stscl/geocn",
                          build_vignettes = TRUE,
@@ -30,6 +32,7 @@ devtools::install_github("stscl/geocn",
 ### Drawing a Map of China Using `ggplot2`
 
 ``` r
+
 library(sf)
 library(ggplot2)
 library(cowplot)
@@ -90,6 +93,7 @@ cnmap1
 ### Drawing a Map of China Using `tmap`
 
 ``` r
+
 library(sf)
 library(tmap)
 library(cowplot)
@@ -141,6 +145,7 @@ ggdraw() +
 ```
 
 ``` r
+
 cnmap2
 ```
 

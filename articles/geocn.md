@@ -14,6 +14,7 @@ what data sets are available using the
 function.
 
 ``` r
+
 library(sf)
 ## Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE
 library(geocn)
@@ -55,6 +56,7 @@ However, you can specify the return format through the `output`
 parameter.
 
 ``` r
+
 albers = load_cn_alberproj()
 
 province = load_cn_province()
@@ -70,6 +72,7 @@ ggplot(data = province) +
 ![](geocn_files/figure-html/map_albers-1.png)
 
 ``` r
+
 
 province_albers = st_transform(province,albers)
 ggplot(data = province_albers) +
@@ -94,6 +97,7 @@ function, the `from` and `to` parameters respectively refer to `wgs`,
 Conversion from GCJ02 to WGS84.
 
 ``` r
+
 lon = c(126.626510,126.625261,126.626378,126.626541,126.626721,126.627732,126.626510)
 lat = c(45.731596,45.729834,45.729435,45.729676,45.729604,45.730915,45.731596)
 st_transform_cn(lon,lat)
