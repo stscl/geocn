@@ -22,7 +22,7 @@ library(ggplot2)
 
 datasets_geocn = list_geocn()
 datasets_geocn
-## # A tibble: 19 × 2
+## # A tibble: 20 × 2
 ##    functions               results                                              
 ##    <chr>                   <chr>                                                
 ##  1 load_world_country      Global Country Boundaries                            
@@ -43,7 +43,8 @@ datasets_geocn
 ## 16 load_loess_plateau      Loess Plateau Boundary                               
 ## 17 load_yangtze_basin      Yangtze River Basin Boundary                         
 ## 18 load_yellow_river_basin Yellow River Basin Boundary                          
-## 19 load_weihe_basin        Weihe River Basin Boundary
+## 19 load_weihe_basin        Weihe River Basin Boundary                           
+## 20 load_tarim_basin        Tarim River Basin Boundary
 ```
 
 ### Commonly Used CRS for Drawing Maps of China

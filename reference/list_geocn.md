@@ -16,7 +16,7 @@ A tibble
 
 ``` r
 list_geocn()
-#> # A tibble: 19 × 2
+#> # A tibble: 20 × 2
 #>    functions               results                                              
 #>    <chr>                   <chr>                                                
 #>  1 load_world_country      Global Country Boundaries                            
@@ -38,4 +38,5 @@ list_geocn()
 #> 17 load_yangtze_basin      Yangtze River Basin Boundary                         
 #> 18 load_yellow_river_basin Yellow River Basin Boundary                          
 #> 19 load_weihe_basin        Weihe River Basin Boundary                           
+#> 20 load_tarim_basin        Tarim River Basin Boundary                           
 ```
