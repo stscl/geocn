@@ -50,6 +50,23 @@ load_yellow_river_basin = \(){
   return(cn_yellow_river_basin)
 }
 
+#' Loading the Boundary Polygon Data of Tarim River Basin
+#'
+#' @return An sf object
+#' @export
+#'
+#' @examples
+#' load_tarim_basin()
+#'
+load_tarim_basin = \(){
+  suppressWarnings({
+    cn_tarim_basin = system.file('extdata/TarimRiverBasin.geojson',
+                                 package = 'geocn') |>
+      sf::read_sf()
+  })
+  return(cn_tarim_basin)
+}
+
 #' Loading the Boundary Polygon Data of Loess Plateau
 #'
 #' @return An sf object

@@ -31,6 +31,7 @@ reference:
   - load_yangtze_basin
   - load_yellow_river_basin
   - load_weihe_basin
+  - load_tarim_basin
 
 - title: Commonly Used CRS in China Region
   contents:
