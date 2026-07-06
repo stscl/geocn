@@ -10,7 +10,6 @@ Description: Providing various commonly used spatial data related
              to Chinese regions in the R programming environment.
 License: GPL-3
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
 URL: https://stscl.github.io/geocn/, https://github.com/stscl/geocn
 BugReports: https://github.com/stscl/geocn/issues
 Depends: 
@@ -30,4 +29,5 @@ Suggests:
     rmarkdown,
     tmap
 VignetteBuilder: knitr
+Config/roxygen2/markdown: TRUE
 Config/roxygen2/version: 8.0.0
