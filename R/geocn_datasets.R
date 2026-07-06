@@ -31,7 +31,8 @@ list_geocn = \(){
       "load_loess_plateau",
       "load_yangtze_basin",
       "load_yellow_river_basin",
-      "load_weihe_basin"),
+      "load_weihe_basin",
+      "load_tarim_basin"),
     results = c(
       "Global Country Boundaries",
       "Global Continents",
@@ -51,7 +52,8 @@ list_geocn = \(){
       "Loess Plateau Boundary",
       "Yangtze River Basin Boundary",
       "Yellow River Basin Boundary",
-      "Weihe River Basin Boundary")
+      "Weihe River Basin Boundary",
+      "Tarim River Basin Boundary")
     )
   return(geocn_datasets)
 }
